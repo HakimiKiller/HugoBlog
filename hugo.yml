@@ -3,7 +3,6 @@ languageCode: "en-us"
 title: "k's Blog"
 theme: "PaperMod"
 copyright: "© [k](https://github.com/HakimiKiller)"
-canonifyURLs: true
 
 minify:
   minifyOutput: true            # 压缩网页代码：把没用的空格删了，加快网页加载速度
@@ -17,13 +16,13 @@ menu:
       url: /
       weight: 10                # 数字越小越靠左
     - name: "Search"
-      url: /search
+      url: search
       weight: 20
     - name: "Archives"
-      url: /archives
+      url: archives
       weight: 30
     - name: "Tags"
-      url: /tags
+      url: tags
       weight: 40
 
 params:

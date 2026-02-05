@@ -3,6 +3,7 @@ languageCode: "en-us"
 title: "k's Blog"
 theme: "PaperMod"
 copyright: "© [k](https://github.com/HakimiKiller)"
+canonifyURLs: true
 
 minify:
   minifyOutput: true            # 压缩网页代码：把没用的空格删了，加快网页加载速度

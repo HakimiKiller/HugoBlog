@@ -1,0 +1,72 @@
+baseURL: "https://HakimiKiller.github.io/HugoBlog/"
+languageCode: "en-us"
+title: "k's Blog"
+theme: "PaperMod"
+copyright: "© [k](https://github.com/HakimiKiller)"
+
+minify:
+  minifyOutput: true            # 压缩网页代码：把没用的空格删了，加快网页加载速度
+
+enableEmoji: true               # 开启表情：支持用 :dog: 这种代码写 🐶
+enableRobotsTXT: true           # 爬虫协议：告诉搜索引擎哪些页面可以抓取
+
+menu:
+  main:
+    - name: "Home"
+      url: /
+      weight: 10                # 数字越小越靠左
+    - name: "Search"
+      url: /search
+      weight: 20
+    - name: "Archives"
+      url: /archives
+      weight: 30
+    - name: "Tags"
+      url: /tags
+      weight: 40
+
+params:
+  env: production               # 环境：生产模式（发布用）
+  defaultTheme: auto            # 主题模式：auto 为跟随系统，深浅色自动切换
+  DateFormat: "2006-01-02"      # 日期格式：显示为 2026-02-04
+  ShowReadingTime: true         # 阅读耗时：显示读完这篇文章大概要多久
+  ShowWordCount: true           # 字数统计：显示文章有多少个字
+  ShowCodeCopyButtons: true     # 代码复制：代码块右上角会出现一个“Copy”按钮
+  ShowToc: true                 # 目录功能：长文章自动生成右侧目录
+  TocOpen: false                # 目录折叠：默认关闭，不遮挡内容
+
+  assets:
+    favicon: "https://github.com/HakimiKiller.png" # 直接用你的 GitHub 头像做网站小图标
+  
+  # 首页欢迎语 (在大头贴下显示的文字)
+  homeInfoParams:
+    title: "Hi, I'm k."
+    content: |
+      A space dedicated to the beauty of existence.   
+      Sharing reflections on a life well-lived and the simple   
+      pleasures that make it all worthwhile.
+
+  # 社交链接图标
+  socialIcons:
+    - name: github
+      url: "https://github.com/HakimiKiller"
+
+  # 全文搜索配置 (这是搜索算法的精度设置，一般不用动)
+  fuseOpts:
+    isCaseSensitive: false      # 不区分大小写
+    threshold: 0.4              # 匹配阈值：0.4 是比较合理的平衡点
+    keys: ["title", "summary", "content"] # 搜索范围：标题、摘要、内容
+
+outputs:
+  home:
+    - HTML                      # 生成普通网页
+    - RSS                       # 生成订阅源
+    - JSON                      # 生成搜索索引文件（没这个搜不到东西）
+
+markup:
+  highlight:
+    noClasses: false            # 是否使用外部 CSS 类
+    style: "monokai"            # 代码高亮风格：monokai 是经典的黑底彩色方案
+  goldmark:
+    renderer:
+      unsafe: true              # 允许 Markdown 使用 HTML 标签（比如你想给字加颜色）

@@ -13,7 +13,7 @@ enableRobotsTXT: true           # 爬虫协议：告诉搜索引擎哪些页面�
 menu:
   main:
     - name: "Home"
-      url: /
+      url: ''
       weight: 10                # 数字越小越靠左
     - name: "Search"
       url: search

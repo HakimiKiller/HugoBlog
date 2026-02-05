@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://HakimiKiller.github.io/HugoBlog/sitemap.xml

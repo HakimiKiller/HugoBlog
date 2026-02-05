@@ -14,7 +14,7 @@ https://chocolatey.org/install#individual
 
 ## install
 
-![alt text](/images/posts/chocolatey/image.png)
+![alt text](images/chocolatey/image.png)
 
 ---
 
